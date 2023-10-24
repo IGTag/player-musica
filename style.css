@@ -1,0 +1,141 @@
+body{
+    background-image: linear-gradient(
+       rgba(59,88,93),
+       rgb(29,40,42)
+     );
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer
+}
+
+#bellow-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0 1em 0;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.button{
+    font-size: 1.5em;
+}
+.button-navigate{
+    font-size: 3em;
+}
+
+.button-biggest{
+    font-size: 4em;
+}
+
+#cover{
+    width: 450px;
+    border-style: solid;
+    border-width: white;
+    border-radius: 5px;
+
+}
+#playlist-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0 4em 0;
+}
+
+#song-name{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.light-color{
+    color:rgb(139,153,156);
+}
+
+#progress-bar{
+    background-color:rgb(139,153,156);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#current-progress {
+     --progress:0%;
+    background-color: white;
+    height: inherit;
+    width: var(--progress);
+    border-radius: inherit;
+}
+
+#progress-container{
+    cursor: pointer;
+}
+
+.button-active{
+    color: rgb(0, 128, 62);
+}
+
+#time-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.5em;
+}
+
+
+.mixer_volumebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-right:5px ;
+    margin: none;
+}
+
+.volume_slider,
+.mixer_volume{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: rgb(139,153,156);
+    -webkit-transition: .2s;
+    transition: none .2s;
+}
+.volume_slider::-webkit-slider-thumb,
+.mixer_volume::-webkit-slider-thumb {
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid rgb(139,153,156);
+    cursor: pointer;
+    border-radius: 100%;
+
+}
+
+i.bi-volume-down{
+    font-size: 2em;
+}
+i.bi-volume-up{
+    font-size: 2em;
+}
